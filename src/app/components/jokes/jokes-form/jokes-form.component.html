@@ -19,9 +19,8 @@
         type="text"
         id="answer"
         placeholder="Enter the answer"
-        [disabled]="!jokesForm.valid"
       />
     </label>
-    <button class="button" (click)="addJoke()" type="button">CREATE</button>
+    <button class="button" (click)="addJoke()" type="button" [disabled]="!jokesForm.valid">CREATE</button>
   </form>
 </section>
