@@ -19,7 +19,7 @@ export class JokesComponent {
   ];
 
   addJoke(joke: Joke): void {
-    this.jokes = [...this.jokes, joke];
+    this.jokes = [joke, ...this.jokes];
   }
 
   deleteJoke(index: number): void {
