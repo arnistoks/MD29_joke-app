@@ -1,0 +1,8 @@
+<section class="card" *ngIf="joke?.question">
+  <h2 class="question">{{ joke?.question }}</h2>
+  <h2 class="answer" *ngIf="showAnswer">{{ joke?.answer }}</h2>
+  <div class="button__line">
+    <button class="button__tellMe" (click)="toggleAnswerVisibility()">{{ buttonTitle }}</button>
+    <button class="button__delete" (click)="deleteJoke()">Delete</button>
+  </div>
+</section>

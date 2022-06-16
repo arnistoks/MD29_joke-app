@@ -1,0 +1,10 @@
+<section class="section">
+  <div class="container">
+    <h1 class="title">Create a Joke</h1>
+    <app-jokes-form (addJokeEvent)="addJoke($event)"></app-jokes-form>
+    <app-jokes-list
+      (deleteJokeEvent)="deleteJoke($event)"
+      [jokes]="jokes"
+    ></app-jokes-list>
+  </div>
+</section>

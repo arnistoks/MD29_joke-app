@@ -1,0 +1,27 @@
+<section class="section__form">
+  <form class="form" [formGroup]="jokesForm">
+    <label class="label" for="question">
+      Question
+      <input
+        class="input"
+        formControlName="question"
+        type="text"
+        id="question"
+        placeholder="Enter the question"
+        autofocus
+      />
+    </label>
+    <label class="label" for="answer">
+      Answer
+      <input
+        class="input"
+        formControlName="answer"
+        type="text"
+        id="answer"
+        placeholder="Enter the answer"
+        [disabled]="!jokesForm.valid"
+      />
+    </label>
+    <button class="button" (click)="addJoke()" type="button">CREATE</button>
+  </form>
+</section>

@@ -1,0 +1,3 @@
+<section class="list">
+  <app-jokes-card *ngFor="let joke of jokes; let i = index" [joke]="joke" (deleteJokeEvent)="deleteJoke(i)"></app-jokes-card>
+</section>
